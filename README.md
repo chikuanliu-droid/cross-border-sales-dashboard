@@ -20,7 +20,7 @@
 獨立匯率表建置 (exchange_rates)：建立獨立的固定歷史匯率資料表，保存特定歷史期間的基準匯率（如 TWD/JPY 換算率），確保原本的 `monthly_sales` 原始數據不受影響。
 固定歷史匯率結算：透過 JOIN 匯率表進行金額折算，採用固定歷史匯率作為財報統計基準，有效排除短線匯率波動噪訊，真實反映市場銷售力道。
 
-<img width="637" height="390" alt="截圖 2026-07-22 上午11 25 18" src="https://github.com/user-attachments/assets/2d91d2f5-ba7d-43a0-afd4-2af97614bb7d" />
+<img width="788" height="488" alt="截圖 2026-07-22 上午10 52 17" src="https://github.com/user-attachments/assets/3ce14732-9d29-4a6f-90e6-cb61053bb430" />
 
 Draw.io ERD 圖擴充：於系統架構圖中更新三表關聯（markets、monthly_sales 與 exchange_rates），明確標示匯率表與銷售表之間的 PK/FK 傳遞與 1:N 關聯邏輯。
 
