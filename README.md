@@ -1,6 +1,6 @@
 🌐 **Language Documents**: 
 * [繁體中文 README.md](https://github.com/chikuanliu-droid/cross-border-sales-dashboard/blob/main/README.md)
-* [日本語技術仕様書 README.JP.md](./README.JP.md)
+* [日本語技術仕様書 README.JP.md](https://github.com/chikuanliu-droid/cross-border-sales-dashboard/blob/main/README.JP.md)
 
 📊 跨境銷售與歷史匯率 Dashboard (Cross-Border Sales Dashboard)
 
