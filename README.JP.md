@@ -1,6 +1,6 @@
 🌐 **Language Documents**: 
 * [繁體中文 README.md](https://github.com/chikuanliu-droid/cross-border-sales-dashboard/blob/main/README.md)
-* [日本語技術仕様書 README.JP.md](./README.JP.md)
+* [日本語技術仕様書 README.JP.md](https://github.com/chikuanliu-droid/cross-border-sales-dashboard/blob/main/README.JP.md)
 
 🆕 最新機能：固定歴史為替拡張モジュール (V2.0 Feature)
 多国間売上における多通貨財務レポートの統合課題を解決するため、本プロジェクトでは既存のデータ構造を一切破綻させることなく、固定歴史為替計算モジュールを拡張しました：
