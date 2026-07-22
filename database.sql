@@ -66,7 +66,7 @@ CREATE TABLE monthly_sales (
     market_id INT REFERENCES markets(market_id),
     sale_year INT NOT NULL DEFAULT 2026,
     sale_month INT NOT NULL CHECK (sale_month BETWEEN 1 AND 12),
-    sales_amount NUMERIC(12, 2) NOT NULL,
+    sale_amount NUMERIC(12, 2) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
@@ -91,7 +91,7 @@ INSERT INTO markets (country_code, market_name_tw, market_name_jp) VALUES
 
 -- STREAMING_CHUNK:Inserting monthly sales records...
 -- 6. 寫入 2026 年 Q2 (4~6月) 實體銷售數據（全數為新台幣 TWD 金額）
-INSERT INTO monthly_sales (market_id, sale_year, sale_month, sales_amount) VALUES
+INSERT INTO monthly_sales (market_id, sale_year, sale_month, sale_amount) VALUES
 ((SELECT market_id FROM markets WHERE country_code = 'TW'), 2026, 4, 125000.00),
 ((SELECT market_id FROM markets WHERE country_code = 'JP'), 2026, 4, 158000.00),
 ((SELECT market_id FROM markets WHERE country_code = 'TW'), 2026, 5, 210000.00),
@@ -116,10 +116,10 @@ INSERT INTO exchange_rates (market_id, rate_year, rate_month, twd_to_local_rate,
 SELECT 
     ms.sale_year || '年 ' || ms.sale_month || '月' AS 月份,
     m.market_name_tw AS 市場,
-    TO_CHAR(ms.sales_amount, 'FM$999,999,999.00') AS 原始銷售額_TWD,
+    TO_CHAR(ms.sale_amount, 'FM$999,999,999.00') AS 原始銷售額_TWD,
     er.twd_to_local_rate AS 統一換算匯率_TWD_to_JPY,
     er.currency_symbol AS 集團財報幣種,
-    TO_CHAR(ms.sales_amount * er.twd_to_local_rate, 'FM999,999,999.00') || ' ' || er.currency_symbol AS 統一換算後營收
+    TO_CHAR(ms.sale_amount * er.twd_to_local_rate, 'FM999,999,999.00') || ' ' || er.currency_symbol AS 統一換算後營收
 FROM monthly_sales ms
 JOIN markets m ON ms.market_id = m.market_id
 JOIN exchange_rates er 
