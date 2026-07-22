@@ -16,7 +16,8 @@
 📐 第二階段：系統架構與關係圖設計 (Draw.io)
 
 
-![Uploading 截圖 2026-07-22 上午10.07.26.png…]()
+<img width="612" height="369" alt="截圖 2026-07-22 上午10 07 26" src="https://github.com/user-attachments/assets/d4f2d5a4-b35d-40ef-95fc-c7cb8e676445" />
+
 實作亮點：
 
 業界標準 ERD 繪製：依據資料庫實體表，繪製符合業界標準的 ERD (Entity Relationship Diagram)。
