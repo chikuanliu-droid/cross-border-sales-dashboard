@@ -1,3 +1,11 @@
+🌐 **Language Documents**: 
+* [繁體中文 README.md]([./README.md](https://github.com/chikuanliu-droid/cross-border-sales-dashboard/edit/main/README.md))
+* [日本語技術仕様書 README.JP.md](./README.JP.md)
+
+ 📊 跨境銷售與歷史匯率 Dashboard (Cross-Border Sales Dashboard)
+🚀 【V2.0 升級亮點】 本專案已全面導入 PostgreSQL 歷史匯率表（Exchange Rates） 與 Figma 雙軌數值標籤（JPY 統一財報幣種 + TWD 原始金額），完美模擬跨國集團財報級的數據流轉邏輯！
+
+
 📊 專案作品：跨境電商台日市場銷售分析系統 (Cross-Border Sales Dashboard)
 
 本專案是一個完整全端（End-to-End）的數據分析系統設計。從後端實體資料庫的建置、關聯式架構的設計，到前端符合商業決策的高保真（High-Fidelity）視覺化圖表還原，全面對齊 2026 年 Q2 的實際銷售數據。
