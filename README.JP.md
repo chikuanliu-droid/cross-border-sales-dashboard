@@ -2,6 +2,10 @@
 * [繁體中文 README.md](https://github.com/chikuanliu-droid/cross-border-sales-dashboard/blob/main/README.md)
 * [日本語技術仕様書 README.JP.md](https://github.com/chikuanliu-droid/cross-border-sales-dashboard/blob/main/README.JP.md)
 
+📊 クロスボーダー売上＆固定歴史為替ダッシュボード (Cross-Border Sales Dashboard)
+🚀 【V2.0 アップデートのポイント】
+本プロジェクトでは、PostgreSQL 固定歴史為替テーブル (exchange_rates) および Figma 2系統数値ラベル（JPY 統一財務会計通貨 ＋ TWD 原通貨金額）を全面導入しました。グローバル企業における「固定歴史為替レート」基準の財務級データフローと売上決算ロジックを忠実に再現しています！
+
 🆕 最新機能：固定歴史為替拡張モジュール (V2.0 Feature)
 多国間売上における多通貨財務レポートの統合課題を解決するため、本プロジェクトでは既存のデータ構造を一切破綻させることなく、固定歴史為替計算モジュールを拡張しました：
 
