@@ -13,7 +13,7 @@
 
 多国間売上における多通貨財務レポートの統合課題を解決するため、本プロジェクトでは既存のデータ構造を一切破綻させることなく、固定歴史為替計算モジュールを拡張しました：
 
-<img width="1470" height="956" alt="截圖 2026-07-22 中午12 05 11" src="https://github.com/user-attachments/assets/e2e23c3a-78f8-4ab5-9fff-9327258b7fda" />
+<img width="1470" height="956" alt="PostgreSQL 実行画面 2026-07-22" src="https://github.com/user-attachments/assets/e2e23c3a-78f8-4ab5-9fff-9327258b7fda" />
 
 実装のポイント：
 
@@ -27,7 +27,7 @@
 
 ---
 
-<img width="788" height="488" alt="截圖 2026-07-22 上午10 52 17" src="https://github.com/user-attachments/assets/77d7eaa7-c435-4da7-888c-b6a8f2019420" />
+<img width="788" height="488" alt="Draw.io ER図 2026-07-22" src="https://github.com/user-attachments/assets/77d7eaa7-c435-4da7-888c-b6a8f2019420" />
 
 実装のポイント：
 
@@ -37,7 +37,7 @@ Draw.io ER図の拡張：
 
 ---
 
-<img width="637" height="390" alt="截圖 2026-07-22 上午11 25 18" src="https://github.com/user-attachments/assets/2367130f-3455-4f8d-9831-eb43ed2ad690" />
+<img width="637" height="390" alt="Figma UI ダッシュボード 2026-07-22" src="https://github.com/user-attachments/assets/2367130f-3455-4f8d-9831-eb43ed2ad690" />
 
 実装のポイント：
 
@@ -55,7 +55,7 @@ Figma 2系統通貨ラベル：
 
 フェーズ1：バックエンドデータベース開発 (PostgreSQL / DBeaver)
 
-<img width="1470" height="956" alt="截圖 2026-07-20 中午12 37 27" src="https://github.com/user-attachments/assets/9c5112fe-c122-42f1-a21c-b93acf221ec9" />
+<img width="1470" height="956" alt="PostgreSQL 実行画面 2026-07-20" src="https://github.com/user-attachments/assets/9c5112fe-c122-42f1-a21c-b93acf221ec9" />
 
 実装のポイント：
 
@@ -71,7 +71,7 @@ PostgreSQL を使用してリレーショナルテーブル（markets と monthl
 
 フェーズ2：システムアーキテクチャとER図設計 (Draw.io)
 
-<img width="612" height="369" alt="截圖 2026-07-22 上午10 07 26" src="https://github.com/user-attachments/assets/0c050cbd-25fb-4a1f-88d7-bd2236de53f7" />
+<img width="612" height="369" alt="Draw.io ER図 2026-07-20" src="https://github.com/user-attachments/assets/0c050cbd-25fb-4a1f-88d7-bd2236de53f7" />
 
 実装のポイント：
 
@@ -87,7 +87,7 @@ Primary Key (PK) と Foreign Key (FK) の紐付けを明確にし、1 : N（1対
 
 フェーズ3：高精度データビジュアルUI (Figma)
 
-<img width="646" height="411" alt="截圖 2026-07-20 中午12 36 45" src="https://github.com/user-attachments/assets/d33cf99a-d92f-4884-bbb7-db0cf892ff0e" />
+<img width="646" height="411" alt="Figma UI ダッシュボード 2026-07-20" src="https://github.com/user-attachments/assets/d33cf99a-d92f-4884-bbb7-db0cf892ff0e" />
 
 実装のポイント：
 
