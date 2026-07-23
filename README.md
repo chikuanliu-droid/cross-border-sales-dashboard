@@ -2,6 +2,41 @@
 * [繁體中文 README.md](https://github.com/chikuanliu-droid/cross-border-sales-dashboard/blob/main/README.md)
 * [日本語技術仕様書 README.JP.md](https://github.com/chikuanliu-droid/cross-border-sales-dashboard/blob/main/README.JP.md)
 
+📊 跨境金流與匯兌損耗 Dashboard (Cross-Border Sales & FX Fee Dashboard)
+
+🚀 【V3.0 升級亮點】
+本專案迎來重大架構與視覺突破！在 V3.0 中，全面整合了「PostgreSQL 資料庫架構（含手續費與 View 檢視表）」、「Draw.io 系統關聯架構（ERD）」以及「Figma 堆疊長條圖，前端視覺化」三大核心模組。完美模擬跨國集團在真實金流扣款與換匯環境下，如何透過嚴謹的資料流轉與雙軌對照，精準掌控「總營收」與「實質入帳淨額」的動態損益閉環！
+
+---
+
+系統實作三本柱 (V3.0 Feature)
+
+<img width="1470" height="956" alt="3 0 - SQL" src="https://github.com/user-attachments/assets/49eab6d0-457f-431e-9ecc-0e98a42533b9" />
+
+PostgreSQL 資料庫與檢視表模組 
+
+資料表與欄位優化：於 exchange_rates 表中新增 handling_fee_rate（預設 0.5%）與透過 GENERATED ALWAYS AS 自動計算的 effective_rate（實質有效匯率）。
+
+檢視表 (View)：建立 v_cross_border_financial_summary，將各市場的原始銷售額、歷史匯率、實質入帳營收淨額與手續費成本損益完整封裝，查詢時不需重複計算。
+
+<img width="849" height="409" alt="3 0 - ER圖" src="https://github.com/user-attachments/assets/7b8a22eb-8cd1-415f-852e-48aa52dcd83c" />
+
+Draw.io 系統架構與關聯圖
+
+三表關聯對齊：明確定義 MARKETS（市場主表）、MONTHLY_SALES（月度銷售表）與 EXCHANGE_RATES（歷史匯率表）之間的 1 : N 主外鍵關聯。
+
+資料流轉視覺化：繪製自資料表延伸至 V_CROSS_BORDER_SUMMARY (VIEW) 的運算邏輯路徑（包含 amount_twd * effective_rate 與損益計算），確保系統架構清晰易懂。
+
+<img width="723" height="433" alt="3 0 - FIGMA" src="https://github.com/user-attachments/assets/ac8fc7f6-549b-4500-a93d-168fc963c9e8" />
+
+Figma 堆疊長條圖與雙軌幣別視覺化
+
+堆疊長條圖：前端介面將長條圖優化為上下堆疊結構，底部主體呈現實質淨額與在地原始金額（TWD），頂端以高識別度色彩疊加呈現「手續費成本損益帽子」。
+
+雙幣別與「總營收」與「實質入帳淨額」雙軌對照：上方統一採用結算幣別（JPY）標示總額與手續費差價，下方同步保留在地交易幣別（TWD）原始總額，兼具財務嚴謹度與極致的視覺易讀性。
+
+---
+
 📊 跨境銷售與歷史匯率 Dashboard (Cross-Border Sales Dashboard)
 
 🚀 【V2.0 升級亮點】
